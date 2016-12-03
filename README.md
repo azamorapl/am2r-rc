@@ -2,7 +2,7 @@
 
 This is a repository with reconstructed source code for AM2R.
 
-If you don't already know what AM2R is, there's nothing of value here for you.
+If you aren't already familiar with AM2R, this repository likely won't be of much value for you.
 
 ## Copyrighted materials
 
@@ -32,7 +32,7 @@ The source code is intended strictly for personal use.
 
 While text of DMCA takedown notice was not published, it is safe to assume that you are not allowed to publish modified binary builds containing the copyrighted materials.
 
-Since the author did not intend to release the source code, it is safe to assume that you should not be attempting to reuse any parts of source code for anything not related to the project.
+Since DoctorM64 did not intend to release the source code, it is safe to assume that bits of it are not intended for use outside of the project (moreso without having original documentation).
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
