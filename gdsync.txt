@@ -1,9 +1,26 @@
 sprites:
  483: sSubScrPlayer
  499: sMapPlayer
+ 604: sMonsterEgg
+ 606: sMonsterEggPiece1
+ 607: sMonsterEggPiece2
+ 608: sMonsterEggPiece3
+ 641: sMonsterShell1
+ 642: sMonsterShell1Frozen
+ 643: sMonsterShell2
+ 644: sMonsterInside
+ 645: sMonsterInsideFrozen
+ 646: sMonsterEyes
+ 647: sMonsterEyesFrozen
+ 648: sMonsterFangs
+ 649: sMonsterFangsFrozen
 1124: sPlayerDeath
 sounds:
   33: sndPlayerDeath
+ 169: sndMonsterStun
+ 170: sndMonsterHit
+ 171: sndMonsterDeath
+ 258: musMonsterAppear
 backgrounds:
   99: bg_SubScrPlayer1
  100: bg_SubScrPlayer2
