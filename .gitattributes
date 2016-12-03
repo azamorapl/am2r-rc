@@ -1,0 +1,4 @@
+*.gmx text eol=crlf
+*.gml text eol=crlf
+*.txt text eol=crlf
+*.ini text eol=crlf
