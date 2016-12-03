@@ -1,0 +1,14 @@
+sprites:
+ 483: sSubScrPlayer
+ 499: sMapPlayer
+1124: sPlayerDeath
+sounds:
+  33: sndPlayerDeath
+backgrounds:
+  99: bg_SubScrPlayer1
+ 100: bg_SubScrPlayer2
+ 101: bg_SubScrPlayer3
+ 272: bgScoreScreenPlayer
+ 273: bgScoreScreenPlayerGlow1
+ 274: bgScoreScreenPlayerGlow2
+ 275: bgScoreScreenPlayerGlow3

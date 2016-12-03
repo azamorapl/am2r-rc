@@ -1,0 +1,19 @@
+/// set_default_joypad()
+global.openablejoy = 1;
+global.opanalogwalk = 1;
+global.opdeadzone = 50;
+global.opjoyid = 1;
+global.opjoybtn_xax = 0;
+global.opjoybtn_yax = 1;
+global.opjoybtn_a = 3;
+global.opjoybtn_b = 4;
+global.opjoybtn_x = 8;
+global.opjoybtn_l = 5;
+global.opjoybtn_l2 = 7;
+global.opjoybtn_r = 2;
+global.opjoybtn_r2 = 6;
+global.opjoybtn_sel = 1;
+global.opjoybtn_str = 10;
+global.opjoybtn_exit = 9;
+global.opjoybtn_menu1 = 3;
+global.opjoybtn_menu2 = 2;
