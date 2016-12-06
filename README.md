@@ -51,7 +51,9 @@ Requirements: You must have a copy of AM2R backed up from the original release.
 5. Drag the `data.win` file onto the GmxDataSync executable. If everything is correct, this will populate the project with art/audio assets from the binary.
 At this point you can open the project in GameMaker: Studio (note: takes a while to load) and start poking around.
 
-6. [optional] Edit `datafiles/lang/english.ini` to use original names (if you are concerned).
+6. [optional] Copy music files (.ogg) from game directory into "audio" directory inside the "sound" directory of the project (the game will still work without music, though).
+
+7. [optional] Edit `datafiles/lang/english.ini` to use original names (if you are concerned).
 
 ## Things to keep in mind
 
