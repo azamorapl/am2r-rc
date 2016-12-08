@@ -48,11 +48,11 @@ Requirements: You must have a copy of AM2R backed up from the original release.
 
 4. Place the `data.win` file from AM2R 1.1 into the project directory.
 
-    [Copy the `data.win` file by Ctrl+Dragging it from game directory and into the project directory.](.readme.img/4.png)
+    ![Copy the `data.win` file by Ctrl+Dragging it from game directory and into the project directory.](.readme.img/4.png)
 
 5. Drag the `data.win` file onto the GmxDataSync executable. If everything is correct, this will populate the project with art/audio assets from the binary.
     
-    [Drag the `data.win` file from the game directory and onto the GmxDataSync executable](.readme.img/5.png)
+    ![Drag the `data.win` file from the game directory and onto the GmxDataSync executable](.readme.img/5.png)
 
     At this point you can open the project in GameMaker: Studio (note: takes a while to load) and start poking around.
 
