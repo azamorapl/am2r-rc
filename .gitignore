@@ -2,3 +2,5 @@ sprites/images/
 sound/audio/
 background/images/
 fonts/*.png
+data.win
+GmxDataSync.exe

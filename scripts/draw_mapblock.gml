@@ -63,8 +63,8 @@ if (argument8 > 0) {
     if (argument7 == "2") draw_sprite(sMapSP, 1, argument0, argument1);
     if (argument7 == "3" && argument8 == 1) draw_sprite(sMapSP, 2, argument0, argument1);
     if (argument7 == "3" && argument8 == 2) draw_sprite(sMapSP, 5, argument0, argument1);
-    if (argument7 == "4" && argument8 == 1) draw_sprite(sMapSP, 2, argument0, argument1);
-    if (argument7 == "4" && argument8 == 2) draw_sprite(sMapSP, 3, argument0, argument1);
+    if (argument7 == "4" && argument8 == 1) draw_sprite(sMapSP, 3, argument0, argument1);
+    if (argument7 == "4" && argument8 == 2) draw_sprite(sMapSP, 5, argument0, argument1);
     if (argument7 == "5") draw_sprite(sMapSP, 4, argument0, argument1);
     if (argument7 == "U") draw_sprite(sMapSP, 8, argument0, argument1);
     if (argument7 == "D") draw_sprite(sMapSP, 9, argument0, argument1);
