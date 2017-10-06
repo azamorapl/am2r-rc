@@ -1,4 +1,5 @@
 /// load_gameoptions()
+global.toggleStatus = 0
 global.opfullscreen = 1;
 global.opscale = 0;
 global.opvsync = 0;

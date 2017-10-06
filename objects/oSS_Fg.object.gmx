@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>toggleStatus = 0;
-ealpha = 0;
+            <string>ealpha = 0;
 active = 0;
 fadeout = 0;
 fadein = 1;
@@ -103,7 +102,7 @@ opt_text2 = "";
           <argument>
             <kind>1</kind>
             <string>if (oControl.kSelect &amp;&amp; oControl.kSelectPushedSteps == 0){ 
-    toggleStatus = !toggleStatus
+    global.toggleStatus = !global.toggleStatus
 }
 
 if (fadein) {
@@ -191,7 +190,7 @@ draw_rectangle(view_xview[0], view_yview[0], view_xview[0] + 330, view_yview[0] 
 draw_rectangle(view_xview[0], view_yview[0] + 198 + rectoffset, view_xview[0] + 330, view_yview[0] + 250, false);
 if (global.ssmode == 0) {
 
-    if (toggleStatus){
+    if (global.toggleStatus){
         if (/*isEnabledInModifiers &amp;&amp; (*/global.unlock[0] == 1 || global.unlock[1] == 1 || global.unlock[2] == 1){    
             draw_background_ext(bg_SubScrTop, view_xview[0], view_yview[0] + 209 + rectoffset, 1, 1, 0, -1, ealpha);
         }
@@ -217,7 +216,7 @@ if (global.ssmode == 0) {
         draw_text(view_xview[0] + 260, view_yview[0] + 198 + rectoffset, metrtext1);
         draw_text(view_xview[0] + 304, view_yview[0] + 198 + rectoffset, metrtext2);
 
-        if (toggleStatus){
+        if (global.toggleStatus){
             if (/*isEnabledInModifiers &amp;&amp; (*/global.unlock[0] == 1 || global.unlock[1] == 1 || global.unlock[2] == 1){
                 draw_text(view_xview[0] + 19, view_yview[0] + 209 + rectoffset, string(global.etanks) + "/10");
                 draw_text(view_xview[0] + 129, view_yview[0] + 209 + rectoffset, string(global.mtanks) + "/44");
@@ -232,7 +231,7 @@ if (global.ssmode == 0) {
         draw_text(view_xview[0] + 259, view_yview[0] + 197 + rectoffset, metrtext1);
         draw_text(view_xview[0] + 303, view_yview[0] + 197 + rectoffset, metrtext2);
         
-        if (toggleStatus){
+        if (global.toggleStatus){
             if (/*isEnabledInModifiers &amp;&amp; (*/global.unlock[0] == 1 || global.unlock[1] == 1 || global.unlock[2] == 1){
                 draw_text(view_xview[0] + 18, view_yview[0] + 209 + rectoffset, string(global.etanks) + "/10");
                 draw_text(view_xview[0] + 128, view_yview[0] + 209 + rectoffset, string(global.mtanks) + "/44");
