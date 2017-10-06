@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ealpha = 0;
+            <string>toggleStatus = 0;
+ealpha = 0;
 active = 0;
 fadeout = 0;
 fadein = 1;
@@ -101,7 +102,11 @@ opt_text2 = "";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (fadein) {
+            <string>if (oControl.kSelect &amp;&amp; oControl.kSelectPushedSteps == 0){ 
+    toggleStatus = !toggleStatus
+}
+
+if (fadein) {
     if (rectoffset &gt; 0) {
         rectoffset -= 2;
     } else fadein = 0;
@@ -185,9 +190,17 @@ draw_set_alpha(1);
 draw_rectangle(view_xview[0], view_yview[0], view_xview[0] + 330, view_yview[0] + 41 - rectoffset, false);
 draw_rectangle(view_xview[0], view_yview[0] + 198 + rectoffset, view_xview[0] + 330, view_yview[0] + 250, false);
 if (global.ssmode == 0) {
-    if (/*isEnabledInModifiers &amp;&amp; (*/global.unlock[0] == 1 || global.unlock[1] == 1 || global.unlock[2] == 1){    
-        draw_background_ext(bg_SubScrTop, view_xview[0], view_yview[0] + 209 + rectoffset, 1, 1, 0, -1, ealpha);
+
+    if (toggleStatus){
+        if (/*isEnabledInModifiers &amp;&amp; (*/global.unlock[0] == 1 || global.unlock[1] == 1 || global.unlock[2] == 1){    
+            draw_background_ext(bg_SubScrTop, view_xview[0], view_yview[0] + 209 + rectoffset, 1, 1, 0, -1, ealpha);
+        }
+    }else{
+        draw_set_color(c_black); 
+        draw_set_alpha(1); 
+        draw_rectangle(view_xview[0], view_yview[0] + 212 + rectoffset, view_xview[0] + 330, view_yview[0] + 232 + rectoffset, false); 
     }
+    
     draw_background_ext(bg_SubScrBottom, view_xview[0], view_yview[0] + 30 - rectoffset, 10, 1, 0, -1, ealpha);
     draw_background_ext(bg_MapBottom, view_xview[0], view_yview[0] + 198 + rectoffset, 1, 1, 0, -1, ealpha);
     draw_set_alpha(ealpha);
@@ -204,11 +217,14 @@ if (global.ssmode == 0) {
         draw_text(view_xview[0] + 260, view_yview[0] + 198 + rectoffset, metrtext1);
         draw_text(view_xview[0] + 304, view_yview[0] + 198 + rectoffset, metrtext2);
 
-        if (/*isEnabledInModifiers &amp;&amp; (*/global.unlock[0] == 1 || global.unlock[1] == 1 || global.unlock[2] == 1){
-            draw_text(view_xview[0] + 19, view_yview[0] + 209 + rectoffset, string(global.etanks) + "/10");
-            draw_text(view_xview[0] + 129, view_yview[0] + 209 + rectoffset, string(global.mtanks) + "/44");
-            draw_text(view_xview[0] + 211, view_yview[0] + 209 + rectoffset, string(global.stanks) + "/10");
-            draw_text(view_xview[0] + 275, view_yview[0] + 209 + rectoffset, string(global.ptanks) + "/10");
+        if (toggleStatus){
+            if (/*isEnabledInModifiers &amp;&amp; (*/global.unlock[0] == 1 || global.unlock[1] == 1 || global.unlock[2] == 1){
+                draw_text(view_xview[0] + 19, view_yview[0] + 209 + rectoffset, string(global.etanks) + "/10");
+                draw_text(view_xview[0] + 129, view_yview[0] + 209 + rectoffset, string(global.mtanks) + "/44");
+                draw_text(view_xview[0] + 211, view_yview[0] + 209 + rectoffset, string(global.stanks) + "/10");
+                draw_text(view_xview[0] + 275, view_yview[0] + 209 + rectoffset, string(global.ptanks) + "/10");
+            }
+        }else{
         }
         
         draw_set_color(c_white);
@@ -216,11 +232,14 @@ if (global.ssmode == 0) {
         draw_text(view_xview[0] + 259, view_yview[0] + 197 + rectoffset, metrtext1);
         draw_text(view_xview[0] + 303, view_yview[0] + 197 + rectoffset, metrtext2);
         
-        if (/*isEnabledInModifiers &amp;&amp; (*/global.unlock[0] == 1 || global.unlock[1] == 1 || global.unlock[2] == 1){
-            draw_text(view_xview[0] + 18, view_yview[0] + 209 + rectoffset, string(global.etanks) + "/10");
-            draw_text(view_xview[0] + 128, view_yview[0] + 209 + rectoffset, string(global.mtanks) + "/44");
-            draw_text(view_xview[0] + 210, view_yview[0] + 209 + rectoffset, string(global.stanks) + "/10");
-            draw_text(view_xview[0] + 274, view_yview[0] + 209 + rectoffset, string(global.ptanks) + "/10");
+        if (toggleStatus){
+            if (/*isEnabledInModifiers &amp;&amp; (*/global.unlock[0] == 1 || global.unlock[1] == 1 || global.unlock[2] == 1){
+                draw_text(view_xview[0] + 18, view_yview[0] + 209 + rectoffset, string(global.etanks) + "/10");
+                draw_text(view_xview[0] + 128, view_yview[0] + 209 + rectoffset, string(global.mtanks) + "/44");
+                draw_text(view_xview[0] + 210, view_yview[0] + 209 + rectoffset, string(global.stanks) + "/10");
+                draw_text(view_xview[0] + 274, view_yview[0] + 209 + rectoffset, string(global.ptanks) + "/10");
+            }
+        }else{
         }
                         
         draw_set_font(fontMenuSmall2);
